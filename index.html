@@ -2,15 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>IE 9 Jump Lists</title>
+    <title>IE9 Jump Lists</title>
 
     <meta name="description" content="" />
     <meta name="keywords" value="" />
-
+    
+    <!--  The name of the shortcut. If absent the title is used. //-->
+    <meta name="application-name" content="IE9 Jump Lists Example"/> 
+    
+    <!--  Optional text that is displayed as a tooltip when the mouse pointer 
+    hovers over the pinned site shortcut icon in the Windows Start menu or desktop. //-->
+	<meta name="msapplication-tooltip" content="github : IE9 Jump Lists"/>
+	
+	<!--  The meat of the example. These entries will included in your pinned jump list. //-->
+	<meta name="msapplication-task" content="name=Watch This; action-uri=https://github.com/davidahill/ie9-jump-lists/toggle_watch; icon-uri=https://github.com/favicon.ico" />
+	<meta name="msapplication-task" content="name=Fork This; action-uri=https://github.com/davidahill/ie9-jump-lists/fork; icon-uri=https://github.com/favicon.ico" />
+	<meta name="msapplication-task" content="name=github Home; action-uri=https://github.com/; icon-uri=https://github.com/favicon.ico" />
+	<meta name="msapplication-task" content="name=jQuery; action-uri=http://jquery.com/; icon-uri=http://static.jquery.com/favicon.ico" />
+	
+	<!--  The link to the pinned icon, 64x64 icon file is best. Create one here; http://www.favicon.co.uk/index.php //-->
+	<link rel="shortcut icon" href="/favicon.ico" />
+	
+	<!--  The root URL of the application. If absent, current url is used. //-->
+	<meta name="msapplication-starturl" content="https://github.com/davidahill/ie9-jump-lists"/>
+	
+	<!--  The initial size of the pinned site browser window. Minimum 800x600. //-->
+	<meta name="msapplication-window" content="width=800; height=600"/>
+	
+	<!--  The color of the navigation buttons in the pinned site browser window. 
+	Any named color or hex color value. If this meta element is absent, the color is based on the shortcut icon. //-->
+	<meta name="msapplication-navbutton-color" content="blue"/>
+	
     <link rel="stylesheet" href="" type="text/css" />
     <script src=""></script>
 </head>
 <body>
-
+	<p>Hello World!</p>
 </body>
 </html>
