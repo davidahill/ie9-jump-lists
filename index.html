@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
+	<meta charset='utf-8'>
 
-  <title>davidahill/ie9-jump-lists @ GitHub</title>
+	<title>davidahill/ie9-jump-lists @ GitHub</title>
+	
+	<meta name="application-name" content="IE9 Jump Lists Example"/>
+	
+	<meta name="msapplication-tooltip" content="github : IE9 Jump Lists"/>
+	<meta name="msapplication-task" content="name=Watch This; action-uri=https://github.com/davidahill/ie9-jump-lists/toggle_watch; icon-uri=https://github.com/favicon.ico" />
+	<meta name="msapplication-task" content="name=Fork This; action-uri=https://github.com/davidahill/ie9-jump-lists/fork; icon-uri=https://github.com/favicon.ico" />
+	<meta name="msapplication-task" content="name=github Home; action-uri=https://github.com/; icon-uri=https://github.com/favicon.ico" />
+	<meta name="msapplication-task" content="name=jQuery; action-uri=http://jquery.com/; icon-uri=http://static.jquery.com/favicon.ico" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="msapplication-starturl" content="https://github.com/davidahill/ie9-jump-lists"/>
+	<meta name="msapplication-window" content="width=800; height=600"/>
+	<meta name="msapplication-navbutton-color" content="blue"/>
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #ffffff;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #000000; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #000000; }
-    h3 { text-align: center; color: #000000; }
-    a { color: #000000; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+	<style type="text/css">
+		body {
+			margin-top: 1.0em;
+			background-color: #ffffff;
+			font-family: Helvetica, Arial, FreeSans, san-serif;
+			color: #000000;
+		}
+		#container {
+			margin: 0 auto;
+			width: 700px;
+		}
+		h1 { font-size: 3.8em; color: #000000; margin-bottom: 3px; }
+		h1 .small { font-size: 0.4em; }
+		h1 a { text-decoration: none }
+		h2 { font-size: 1.5em; color: #000000; }
+		h3 { text-align: center; color: #000000; }
+		a { color: #000000; }
+		.description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+		.download { float: right; }
+		pre { background: #CCC; color: #333; padding: 15px;}
+		hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+		.footer { text-align:center; padding-top:30px; font-style: italic; }
+	</style>
 </head>
 
 <body>
@@ -52,13 +64,48 @@
       by running:
       <pre>$ git clone git://github.com/davidahill/ie9-jump-lists</pre>
     </p>
-
-    <div class="footer">
+    
+    <h2>Usage</h2>
+    <p>The name of the shortcut. If absent the title is used.
+    	<pre>&lt;meta name="application-name" content="IE9 Jump Lists Example" /&gt;</pre>
+    </p>
+    
+     <p>Optional text that is displayed as a tooltip when the mouse pointer 
+		hovers over the pinned site shortcut icon in the Windows Start menu or desktop
+    	<pre>&lt;meta name="msapplication-tooltip" content="github : IE9 Jump Lists" /&gt;</pre>
+    </p>
+    
+    <p>The meat of the example. These entries will included in your pinned jump list.</p>
+	<p>Here are the three attributes that need to be included:
+		<ul>
+			<li>Name: This is the visual name of the link on the jump list.</li>
+			<li>Action: The url the user will be sent to.</li>
+			<li>Icon URI: A link to the <i>favicon</i> that will appear to the left of the name.</li>
+		</ul>
+    	<pre style="overflow-y: scroll;">&lt;meta name="msapplication-task" content="name=Watch This; action-uri=https://github.com/davidahill/ie9-jump-lists/toggle_watch; icon-uri=https://github.com/favicon.ico" /&gt;</br>
+&lt;meta name="msapplication-task" content="name=Fork This; action-uri=https://github.com/davidahill/ie9-jump-lists/fork; icon-uri=https://github.com/favicon.ico" /&gt;</br>
+&lt;meta name="msapplication-task" content="name=github Home; action-uri=https://github.com/; icon-uri=https://github.com/favicon.ico" /&gt;</br>
+&lt;meta name="msapplication-task" content="name=jQuery; action-uri=http://jquery.com/; icon-uri=http://static.jquery.com/favicon.ico" /&gt;</pre>
+    </p>
+    
+    <p>The link to the pinned icon, 64x64 icon file is best. Create one here; <a href="http://www.favicon.co.uk/index.php">http://www.favicon.co.uk/</a>
+    	<pre>&lt;link rel="shortcut icon" href="/favicon.ico" /&gt;</pre>
+    </p>
+    
+    <p>The initial size of the pinned site browser window. Minimum 800x600.</a>
+    	<pre>&lt;meta name="msapplication-window" content="width=800; height=600" /&gt;</pre>
+    </p>
+    
+     <p>The color of the navigation buttons in the pinned site browser window. Any named color or 
+		hex color value. If this meta element is absent, the color is based on the shortcut icon.</a>
+    	<pre>&lt;meta name="msapplication-navbutton-color" content="blue" /&gt;</pre>
+    </p>
+    
+    <div class="footer" style="margin-bottom: 40px;">
       get the source code on GitHub : <a href="http://github.com/davidahill/ie9-jump-lists">davidahill/ie9-jump-lists</a>
     </div>
 
   </div>
-
   
 </body>
 </html>
