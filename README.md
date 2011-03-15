@@ -9,7 +9,7 @@ the hurdles that I encountered</p>
 
 <p>The name of the shortcut. If absent the title is used.</p>
 <pre>
-    <code><meta name="application-name" content="IE9 Jump Lists Example"/></code>
+    <code>&lt; meta name="application-name" content="IE9 Jump Lists Example" /&gt;</code>
 </pre>
 
 <p>Optional text that is displayed as a tooltip when the mouse pointer 
