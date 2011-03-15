@@ -28,7 +28,7 @@ hovers over the pinned site shortcut icon in the Windows Start menu or desktop.<
 
 <pre>
 <code>&lt;meta name="msapplication-task" content="name=IE9 Jump List Home; action-uri=https://github.com/davidahill/ie9-jump-lists/; icon-uri=https://github.com/favicon.ico" /&gt;
-&lt;meta name="msapplication-task" content="name=IE9 Jump List Home; action-uri=https://github.com/davidahill/ie9-jump-lists/; icon-uri=https://github.com/favicon.ico" /&gt;
+&lt;meta name="msapplication-task" content="name=Microsoft Jump Lists; action-uri=http://www.microsoft.com/windows/windows-7/features/jump-lists.aspx; icon-uri=http://www.microsoft.com/windows/Framework/images/favicon.ico" /&gt;
 &lt;meta name="msapplication-task" content="name=github Home; action-uri=https://github.com/; icon-uri=https://github.com/favicon.ico" /&gt;
 &lt;meta name="msapplication-task" content="name=jQuery; action-uri=http://jquery.com/; icon-uri=http://static.jquery.com/favicon.ico" /&gt;</code>
 </pre>
